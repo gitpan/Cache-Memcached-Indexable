@@ -6,7 +6,7 @@ use Carp;
 use Digest::SHA1 qw(sha1_hex);
 use base qw(Cache::Memcached::Indexable::Logic);
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 sub set_max_power {
     my($self, $power) = @_;
@@ -27,7 +27,7 @@ sub max_power {
 sub max_power_length {
     my $self = shift;
     unless ($self->{_max_power_length}) {
-        $self->{_max_power_length} = length(sprintf('%x', $self->{_max_power}));
+        $self->{_max_power_length} = length(sprintf('%x', $self->max_power));
     }
     return $self->{_max_power_length};
 }

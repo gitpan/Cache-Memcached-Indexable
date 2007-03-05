@@ -1,5 +1,7 @@
 Revision history for Perl extension Cache::Memcached::Indexable
 
+  0.02  Mon Mar  5 21:50:53 2007
+        - fixed bug on Cache::Memcached::Indexable::Logic::DigestSHA1
   0.01  Mon Mar  5 20:03:44 2007
         - original version
 
