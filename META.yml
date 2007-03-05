@@ -1,0 +1,16 @@
+abstract: A key indexable Cache::Memcached wrapper
+author: Koichi Taniguchi <taniguchi@livedoor.jp>
+build_requires: 
+  Test::More: 0
+distribution_type: module
+generated_by: Module::Install version 0.64
+license: perl
+name: Cache-Memcached-Indexable
+no_index: 
+  directory: 
+    - inc
+    - t
+requires: 
+  Cache::Memcached: 0
+  Digest::SHA1: 0
+version: 0.01
