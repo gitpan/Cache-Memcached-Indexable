@@ -5,7 +5,7 @@ use warnings;
 use UNIVERSAL::require;
 use Carp;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 our $DEFAULT_LOGIC = 'Cache::Memcached::Indexable::Logic::Default';
 
 sub new {
